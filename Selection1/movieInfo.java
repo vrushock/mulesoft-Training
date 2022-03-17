@@ -15,13 +15,13 @@ public class movieInfo{
             //ResultSet result=statement.executeQuery(querry);
             //System.out.println(result);
             //Inserting Querry
-            String querry="INSERT INTO details values ('Jungle444','Abhishek1','Smriti1','20181','Abriti1');";
-           // Statement statement=connection.createStatement();
-            //ResultSet result=statement.executeQuery(querry);
+            String querry="INSERT INTO details values ('Hibby','Sar','Kar','2081','Abji23');";
+           Statement statement=connection.createStatement();
+            statement.executeUpdate(querry);
             //System.out.println(result);
             //Fetching Querry
             querry="SELECT * FROM details;";
-            Statement statement=connection.createStatement();
+            statement=connection.createStatement();
             ResultSet result=statement.executeQuery(querry);
             System.out.println("Movie Name\t|\tLead Actor\t|\tActress\t|\tYear of Release\t|\tDirector Name");
             while(result.next()){
